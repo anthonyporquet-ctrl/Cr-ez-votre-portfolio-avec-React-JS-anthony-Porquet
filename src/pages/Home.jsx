@@ -4,7 +4,7 @@ import Modal from "../components/Modal";
 
 export default function Home() {
   const [githubData, setGithubData] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     fetch("https://api.github.com/users/anthonyporquet-ctrl")
@@ -14,25 +14,17 @@ export default function Home() {
 
   return (
     <>
-      <Hero openModal={() => setIsModalOpen(true)} />
+      <Hero openModal={() => setOpen(true)} />
 
-      {isModalOpen && githubData && (
-        <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
-          <div className="modal" onClick={(e) => e.stopPropagation()}>
+      <Modal open={open} close={() => setOpen(false)}>
+        {githubData && (
+          <>
             <h2>{githubData.name}</h2>
             <p>Repos publics : {githubData.public_repos}</p>
             <p>Followers : {githubData.followers}</p>
-
-            <a href={githubData.html_url} target="_blank" rel="noreferrer">
-             Voir GitHub
-            </a>
-
-            <button onClick={() => setIsModalOpen(false)}>
-              Fermer
-            </button>
-          </div>
-        </div>
-      )}
+          </>
+        )}
+      </Modal>
     </>
   );
 }

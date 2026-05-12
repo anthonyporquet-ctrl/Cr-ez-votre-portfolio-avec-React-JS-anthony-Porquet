@@ -1,13 +1,33 @@
 import { createPortal } from "react-dom";
-import "./Modal.css";
 
-export default function Modal({ children, close }) {
+export default function Modal({ open, close, children }) {
+  if (!open) return null;
+
   return createPortal(
-    <div className="modal-overlay" onClick={close}>
-      <div className="modal" onClick={(e) => e.stopPropagation()}>
+    <div
+      onClick={close}
+      style={{
+        position: "fixed",
+        inset: 0,
+        background: "rgba(0,0,0,0.7)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          background: "white",
+          padding: 20,
+          borderRadius: 10,
+        }}
+      >
         {children}
+
+        <button onClick={close}>Fermer</button>
       </div>
     </div>,
-    document.getElementById("modal-root")
+    document.body
   );
 }
