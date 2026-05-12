@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Hero from "../components/Hero";
+import Modal from "../components/Modal";
 
 export default function Home() {
   const [githubData, setGithubData] = useState(null);
