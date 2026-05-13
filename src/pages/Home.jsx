@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import "./Home.css";
 import Hero from "../components/Hero";
 import Modal from "../components/Modal";
+import monImage from "../assets/john-doe-about.jpg";
 
 export default function Home() {
   const [githubData, setGithubData] = useState(null);
@@ -12,13 +14,17 @@ export default function Home() {
       .then((data) => setGithubData(data));
   }, []);
 
+  if (!githubData) {
+  return <p>Chargement du profil GitHub...</p>;
+  }
+
   return (
     <>
       <Hero openModal={() => setOpen(true)} />
 
       <Modal open={open} close={() => setOpen(false)}>
 
-        <div>
+        
           <h2 className="modal-title">Mon profil GitHub</h2>
 
           <div className="modal-divider"></div>
@@ -45,8 +51,57 @@ export default function Home() {
               Fermer
             </button>
           </div>
-        </div>  
+          
       </Modal>
+
+      <div className="cadre">
+
+        <article className="apropos">
+
+          <h3>A propos</h3>
+            <div className="modal-divider2"></div>
+
+          <img src={monImage} alt="mon image" />
+
+          <p>Lorem ipsum dolor sit amet consectur adipisicing elit. Optio, necessitatibus consectur tempore perferendis nostrum, edelectus reiciendis impedit aut iure eniem placeat? Natus, neque at?</p>
+          <p>Lorem ipsum dolor sit amet consectur adipisicing elit. Optio, necessitatibus consectur tempore perferendis nostrum, edelectus reiciendis impedit aut iure eniem placeat? Natus, neque at?</p>
+          <p>Lorem ipsum dolor sit amet consectur adipisicing elit. Optio, necessitatibus consectur tempore perferendis nostrum, edelectus reiciendis impedit aut iure eniem placeat? Natus, neque at?</p>
+
+        </article>
+
+        <article className="competence">
+
+          <h3>Mes compétences</h3>
+          
+            <div className="modal-divider2"></div>
+
+            <div className="skill">
+              <p>HTML</p>
+              <div className="bar"><div className="fill html"></div></div>
+            </div>
+
+            <div className="skill">
+              <p>CSS</p>
+              <div className="bar"><div className="fill css"></div></div>
+            </div>
+
+            <div className="skill">
+              <p>JavaScript</p>
+              <div className="bar"><div className="fill js"></div></div>
+            </div>
+
+            <div className="skill">
+              <p>PHP</p>
+              <div className="bar"><div className="fill php"></div></div>
+            </div>
+
+            <div className="skill">
+              <p>React</p>
+              <div className="bar"><div className="fill react"></div></div>
+            </div>
+        
+        </article>
+      </div>
     </>
   );
 }

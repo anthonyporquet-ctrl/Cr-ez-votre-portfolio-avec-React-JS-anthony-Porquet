@@ -45,10 +45,9 @@
 }
 
 .modal-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  align-items: center;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  outline: 3px solid red;
 }
 
 .modal-content img {
