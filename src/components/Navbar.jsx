@@ -10,18 +10,18 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">Anthony Porquet</div>
+      <div className="logo">ANTHONY PORQUET</div>
 
       <div className="hamburger" onClick={toggleMenu}>
         ☰
       </div>
 
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-        <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
-        <li><NavLink to="/services" onClick={closeMenu}>Services</NavLink></li>
-        <li><NavLink to="/portfolio" onClick={closeMenu}>Portfolio</NavLink></li>
-        <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
-        <li><NavLink to="/mentions-legal" onClick={closeMenu}>Mentions</NavLink></li>
+        <li><NavLink to="/" onClick={closeMenu}>HOME</NavLink></li>
+        <li><NavLink to="/services" onClick={closeMenu}>SERVICES</NavLink></li>
+        <li><NavLink to="/portfolio" onClick={closeMenu}>PORTFOLIO</NavLink></li>
+        <li><NavLink to="/contact" onClick={closeMenu}>CONTACT</NavLink></li>
+        <li><NavLink to="/mentions-legal" onClick={closeMenu}>MENTIONS LEGALE </NavLink></li>
       </ul>
     </nav>
   );
