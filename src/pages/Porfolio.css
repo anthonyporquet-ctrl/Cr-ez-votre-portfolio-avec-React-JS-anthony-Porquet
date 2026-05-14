@@ -1,0 +1,43 @@
+.custom-card {
+  background: white;
+  transition: 0.3s;
+  border: none;
+}
+
+.custom-card:hover {
+  background: #efefef;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.2);
+}
+
+.project-card {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.custom-card {
+  border: none;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.card-footer-custom {
+  background: #efefef;
+  padding: 12px;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
