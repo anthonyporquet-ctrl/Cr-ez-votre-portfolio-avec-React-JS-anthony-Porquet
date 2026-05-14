@@ -1,10 +1,11 @@
+
 .titre {
   text-align: center;
   margin-top: 20px;
 }
 
 .titre h1 {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .modal-divider {
@@ -12,31 +13,21 @@
   background: #1e90ff;
   width: 30%;
   margin: 0 auto;
+  border-radius: 2px;
 }
 
-.services-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 90%;
-  margin: 40px auto;
-}
-
-.cadrage {
+.custom-card {
   border: 2px solid #ccc;
-  padding: 20px;
-  border-radius: 8px;
-  background: white;
+  transition: 0.3s;
 }
 
-@media (max-width: 1200px) {
-  .services-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.custom-card:hover {
+  background: #efefef;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-@media (max-width: 900px) {
-  .services-container {
-    grid-template-columns: 1fr;
-  }
+.service-icon {
+  font-size: 40px;
+  color: #1e90ff;
+  margin-bottom: 10px;
 }
