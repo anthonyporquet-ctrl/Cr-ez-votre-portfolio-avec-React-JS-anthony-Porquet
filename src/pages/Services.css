@@ -1,0 +1,42 @@
+.titre {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.titre h1 {
+  font-weight: bold;
+}
+
+.modal-divider {
+  height: 4px;
+  background: #1e90ff;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.cadrage {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background: white;
+}
+
+@media (max-width: 1200px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
