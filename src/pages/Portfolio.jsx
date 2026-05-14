@@ -19,7 +19,7 @@ export default function Portfolio() {
       <div className="titre">
         <h1>Portfolio</h1>
         <p>Voici quelques-une de mes réalisations.</p>
-        <div className="modal-divider"></div>
+        <div className="porfolio-divider"></div>
       </div>
 
         <div className="row g-4 mt-4">

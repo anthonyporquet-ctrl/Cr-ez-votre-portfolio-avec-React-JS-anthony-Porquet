@@ -11,7 +11,7 @@ export default function Services() {
       <div className="titre">
         <h1>Mon offre de Services</h1>
         <p>Voici les prestations sur lesquelles je peux intervenir</p>
-        <div className="modal-divider"></div>
+        <div className="service-divider"></div>
       </div>
 
       <div className="container py-5">
