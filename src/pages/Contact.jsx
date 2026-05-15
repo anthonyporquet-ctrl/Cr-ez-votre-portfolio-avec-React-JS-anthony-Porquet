@@ -11,14 +11,14 @@ export default function Contact() {
           Pour me contacter en vue d'un entretien ou d'une future collaboration,
           merci de remplir le formulaire.
         </p>
-        <div className="contact-divider"></div>
+        <div className="bg-primary contact-divider"></div>
       </div>
 
       <div className="contact-box">
-          <div className="row g-4">
+        <div className="row g-4">
           <div className="col-md-6">
             <h2 className="fw-bold">Formulaire de contact</h2>
-            <div className="contact-divider2"></div>
+            <div className="bg-primary contact-divider2"></div>
 
             <form>
               <input className="form-control mb-3" type="text" placeholder="Nom" required />
@@ -28,7 +28,7 @@ export default function Contact() {
               <textarea className="form-control mb-3" rows="15" placeholder="Votre message" required></textarea>
 
               <div className="text-center">
-                <button className="btn btn-primary">
+                <button className="bg-primary btn btn-primary">
                   Envoyer
                 </button>
               </div>
@@ -38,26 +38,26 @@ export default function Contact() {
           <div className="col-md-6">
 
             <h2 className="fw-bold">Coordonnées</h2>
-            <div className="contact-divider2"></div>
+            <div className="bg-primary contact-divider2"></div>
             <p className="ap">Anthony Porquet</p>
 
             <p>
-              <i className="bi bi-map-fill me-2"></i>
+              <i className="bi bi-map me-2"></i>
               10 rue de Paris
             </p>
 
             <p>
-              <i className="bi bi-geo-alt-fill me-2"></i>
+              <i className="bi bi-geo-alt me-2"></i>
               75000 Paris
             </p>
 
             <p>
-              <i className="bi bi-telephone-fill me-2"></i>
+              <i className="bi bi-telephone me-2"></i>
               01 23 45 67 89
             </p>
 
             <p>
-              <i className="bi bi-envelope-fill me-2"></i>
+              <i className="bi bi-envelope me-2"></i>
               john.doe@email.com
             </p>
 

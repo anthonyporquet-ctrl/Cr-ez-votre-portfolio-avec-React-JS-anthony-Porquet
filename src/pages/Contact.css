@@ -1,6 +1,5 @@
 .contact-divider {
   height: 4px;
-  background: #1e90ff;
   width: 30%;
   margin: 0 auto;
   border-radius: 2px;
@@ -8,7 +7,6 @@
 
 .contact-divider2 {
   height: 3px;
-  background: #1e90ff;
   width: auto;
   margin: 20px auto;
   border-radius: 2px;

@@ -2,7 +2,6 @@ import "./Mentions-legal.css";
 import { Helmet } from "react-helmet-async";
 import "bootstrap-icons/font/bootstrap-icons.css"
 
-
 export default function MentionsLegal() {
   return (
     
@@ -14,7 +13,7 @@ export default function MentionsLegal() {
 
       <div className="titre text-center mb-5">
         <h1>Mentions légales</h1>
-        <div className="contact-divider"></div>
+        <div className="bg-primary contact-divider"></div>
       </div>
 
       <div className="p-4">
@@ -42,22 +41,22 @@ export default function MentionsLegal() {
               <p className="ap">Anthony Porquet</p>
 
             <p>
-              <i className="bi bi-map-fill me-2"></i>
+              <i className="bi bi-map me-2"></i>
               10 rue de Paris
             </p>
 
             <p>
-              <i className="bi bi-geo-alt-fill me-2"></i>
+              <i className="bi bi-geo-alt me-2"></i>
               75000 Paris
             </p>
 
             <p>
-              <i className="bi bi-telephone-fill me-2"></i>
+              <i className="bi bi-telephone me-2"></i>
               01 23 45 67 89
             </p>
 
             <p>
-              <i className="bi bi-envelope-fill me-2"></i>
+              <i className="bi bi-envelope me-2"></i>
               john.doe@email.com
             </p>
               </div>

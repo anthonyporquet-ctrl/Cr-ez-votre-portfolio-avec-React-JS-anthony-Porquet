@@ -10,8 +10,6 @@ export default function Footer() {
         <p>06 00 00 00 00</p>
 
         <div className="socials">
-
-          {/* GitHub */}
           <a
             href="https://github.com/"
             target="_blank"
@@ -26,7 +24,6 @@ export default function Footer() {
             </svg>
           </a>
 
-          {/* Twitter */}
           <a
             href="https://twitter.com/"
             target="_blank"
@@ -41,7 +38,6 @@ export default function Footer() {
             </svg>
           </a>
 
-          {/* LinkedIn */}
           <a
             href="https://linkedin.com/"
             target="_blank"
@@ -55,7 +51,6 @@ export default function Footer() {
               />
             </svg>
           </a>
-
         </div>
       </div>
 
@@ -68,12 +63,14 @@ export default function Footer() {
       </div>
 
       <div className="footer-column">
-        <h3>Derniers projets</h3>
-        <a href="/portfolio">Projet 1</a>
-        <a href="/portfolio">Projet 2</a>
-        <a href="/portfolio">Projet 3</a>
+        <h3>Mes dernière réelisations</h3>
+        <a href="/portfolio">Fresh Food</a>
+        <a href="/portfolio">Restaurant Akira</a>
+        <a href="/portfolio">Espace bien-être</a>
+        <a href="/portfolio">SEO</a>
+        <a href="/portfolio">Création d'une API</a>
+        <a href="/portfolio">Maquette d'un site web</a>
       </div>
-
     </footer>
   );
 }

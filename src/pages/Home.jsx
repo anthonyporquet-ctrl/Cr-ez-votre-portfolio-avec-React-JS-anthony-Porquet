@@ -24,8 +24,7 @@ export default function Home() {
 
       <Modal open={open} close={() => setOpen(false)}>
 
-        
-          <h2 className="modal-title">Mon profil GitHub</h2>
+                  <h2 className="modal-title">Mon profil GitHub</h2>
 
           <div className="modal-divider"></div>
 
@@ -59,7 +58,7 @@ export default function Home() {
         <article className="apropos">
 
           <h3>A propos</h3>
-            <div className="modal-divider2"></div>
+            <div className="bg-primary modal-divider2"></div>
 
           <img src={monImage} alt="mon image" />
 
@@ -73,30 +72,30 @@ export default function Home() {
 
           <h3>Mes compétences</h3>
           
-            <div className="modal-divider2"></div>
+            <div className="bg-primary modal-divider2"></div>
 
             <div className="skill">
-              <p>HTML</p>
+              <p>HTML 90%</p>
               <div className="bar"><div className="fill html"></div></div>
             </div>
 
             <div className="skill">
-              <p>CSS</p>
+              <p>CSS 80%</p>
               <div className="bar"><div className="fill css"></div></div>
             </div>
 
             <div className="skill">
-              <p>JavaScript</p>
+              <p>JAVASCRIPT 70%</p>
               <div className="bar"><div className="fill js"></div></div>
             </div>
 
             <div className="skill">
-              <p>PHP</p>
+              <p>PHP 60%</p>
               <div className="bar"><div className="fill php"></div></div>
             </div>
 
             <div className="skill">
-              <p>React</p>
+              <p>REACT 50%</p>
               <div className="bar"><div className="fill react"></div></div>
             </div>
         
