@@ -10,18 +10,24 @@ import Mentionslegal from "./pages/Mentions-legal";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
+      <BrowserRouter>
+        <div className="app">
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/mentions-legal" element={<Mentionslegal />} />
-      </Routes>
+          <Navbar />
 
-      <Footer />
+          <div className="content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/mentions-legal" element={<Mentionslegal />} />
+            </Routes>
+          </div>
+
+          <Footer />
+
+      </div>
     </BrowserRouter>
   );
 }

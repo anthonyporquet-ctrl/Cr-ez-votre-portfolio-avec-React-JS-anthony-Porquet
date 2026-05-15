@@ -4,11 +4,12 @@
   gap: 30px;
 
   margin: 40px auto;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
+
   padding: 30px;
   background: #ffffff;
-  color: rgb(0, 0, 0);
+  color: #000;
   border-radius: 5px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
@@ -18,6 +19,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  min-width: 0;
 }
 
 .modal-divider2 {
@@ -30,6 +32,7 @@
 @media (max-width: 768px) {
   .cadre {
     grid-template-columns: 1fr;
+    padding: 15px;
   }
 }
 

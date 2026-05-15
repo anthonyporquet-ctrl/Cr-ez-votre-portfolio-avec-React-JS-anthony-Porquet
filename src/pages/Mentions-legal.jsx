@@ -116,17 +116,26 @@ export default function MentionsLegal() {
               data-bs-parent="#legalAccordion"
             >
               <div className="accordion-body">
+                <p className="fs-4"><strong>Crédits</strong></p>
+
                 <p>
-                  Images provenant de{" "}
+                  Ce site a été réalisé par Anthony Porquet, étudiant au{" "}
+                  <a href="https://eleve.centre-europeen-formation.fr" target="_blank" rel="noopener noreferrer">
+                    Centre Européen de formation.
+                  </a>
+                </p>
+
+                <p className="fst-italic">
+                  Les image utilisées sur ce site sont libres de droits et ont été obtenues sur le site{" "}
                   <a href="https://pixabay.com" target="_blank" rel="noopener noreferrer">
                     Pixabay
                   </a>
                 </p>
 
-                <p>
-                  Favicon provenant de{" "}
+                <p className="fst-italic">
+                  Favicon de ce site a été fournie par{" "}
                   <a href="https://www.flaticon.com" target="_blank" rel="noopener noreferrer">
-                    Flaticon
+                    John dos Icon erstellt von Freepik - Flaticon
                   </a>
                 </p>
               </div>
