@@ -1,0 +1,11 @@
+.titre h1 {
+  font-weight: 600;
+}
+
+.contact-divider {
+  height: 4px;
+  background: #1e90ff;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 2px;
+}
